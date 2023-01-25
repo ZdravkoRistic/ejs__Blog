@@ -1,0 +1,33 @@
+<%- include("partials/header"); %>
+
+
+    <h1>Pocetna</h1>
+    <p>
+        <%=pocetniSadrzaj%>
+    </p>
+
+
+
+    <% console.log(posts); %>
+
+
+
+
+
+        <% posts.forEach(function(post){ %>
+
+            <h1>
+                <%=post.naslov%>
+            </h1>
+            <p>
+                <%=post.sadrzaj.substring(0, 100) + " ..." %>
+                    <a href="/posts/<%= post.naslov %>">Procitaj jos</a>
+            </p>
+
+
+            <% }); %>
+
+
+
+
+                <%- include("partials/footer"); %>

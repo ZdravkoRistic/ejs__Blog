@@ -1,0 +1,24 @@
+<%- include("partials/header"); %>
+
+
+    <h1>Objave</h1>
+
+    <form action="/compose" method="post">
+
+        <div class="form-group">
+
+            <label>Naslov</label>
+            <input class="form-control" type="text" name="postNaslov">
+
+
+
+            <label>Objavi</label>
+            <textarea class="form-control" name="postBody" cols="20" rows="3"></textarea>
+
+
+        </div>
+
+        <button class="btn btn-primary" type="submit" name=">Dugme">Objavi</button>
+    </form>
+
+    <%- include("partials/footer"); %>
